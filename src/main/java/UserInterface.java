@@ -12,11 +12,13 @@ public class UserInterface {
             
             System.out.print("Enter the length of your new password: ");
             Integer userInput = Integer.valueOf(scanner.nextLine());
-            scanner.close();
+            if (userInput <= 0) {
+                break;
+            }
             
             generator.generate(userInput);
             System.out.println(generator.generate(userInput));
-            break;
+            System.out.println("Input 0 to exit.");
             
         }
     }
