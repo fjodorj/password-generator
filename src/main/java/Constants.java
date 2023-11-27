@@ -7,6 +7,8 @@ public final class Constants {
     public static final String NUMBERS = "1234567890";
     public static final String SYMBOLS = " !@#$%^&*_=+-/.?<>)";
     
+    public static final String VALUES = UPPERCASE_LETTERS + LOWERCASE_LETTERS + NUMBERS + SYMBOLS;
+    
     // The class serves as a container for constants and doesn't need to be instantiated to use constants
     private Constants() {}
 }
