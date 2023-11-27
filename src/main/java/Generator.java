@@ -1,19 +1,14 @@
 import java.util.Random;
 
 public class Generator {
-
-    private Constants constants;
-    private Random random;
-    private char[] password;
     
-    public Generator(Constants constants, Random random, char[] password) {
-        this.constants = constants;
-        this.random = random;
-        this.password = password;
-    }
+    public Generator() {}
     
     public char[] generate(int length) {
+        Random random = new Random();
         String values = Constants.VALUES;
+        char[] password = new char[length];
+        
         for (int i = 0; i < length; i++) {
             password[i] = values.charAt(random.nextInt(values.length()));
         }
