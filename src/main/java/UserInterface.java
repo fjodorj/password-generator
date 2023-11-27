@@ -2,7 +2,13 @@ import java.util.Scanner;
 
 public class UserInterface {
     
-    public UserInterface() {}
+    private final Scanner scanner;
+    private final Generator generator;
+    
+    public UserInterface(Scanner scanner, Generator generator) {
+        this.scanner = scanner;
+        this.generator = generator;
+    }
     public void start() {
         
         while (true) {
