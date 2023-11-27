@@ -5,6 +5,7 @@ public class Generator {
     public Generator() {}
     
     public char[] generate(int length) {
+        
         Random random = new Random();
         String values = Constants.VALUES;
         char[] password = new char[length];
@@ -13,5 +14,6 @@ public class Generator {
             password[i] = values.charAt(random.nextInt(values.length()));
         }
         return password;
+        
     }
 }

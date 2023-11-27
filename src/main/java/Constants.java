@@ -11,4 +11,5 @@ public final class Constants {
     
     // The class serves as a container for constants and doesn't need to be instantiated to use constants
     private Constants() {}
+    
 }

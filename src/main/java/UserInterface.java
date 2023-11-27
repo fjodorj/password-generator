@@ -4,6 +4,7 @@ public class UserInterface {
     
     public UserInterface() {}
     public void start() {
+        
         while (true) {
             
             Scanner scanner = new Scanner(System.in);
@@ -16,6 +17,7 @@ public class UserInterface {
             generator.generate(userInput);
             System.out.println(generator.generate(userInput));
             break;
+            
         }
     }
 }
